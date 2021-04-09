@@ -1,0 +1,1781 @@
+    day   outlook  temp humidity    wind play
+0    D1     Sunny   Hot     High    Weak   No
+1    D2     Sunny   Hot     High  Strong   No
+2    D3  Overcast   Hot     High    Weak  Yes
+3    D4      Rain  Mild     High    Weak  Yes
+4    D5      Rain  Cool   Normal    Weak  Yes
+5    D6      Rain  Cool   Normal  Strong   No
+6    D7  Overcast  Cool   Normal  Strong  Yes
+7    D8     Sunny  Mild     High    Weak   No
+8    D9     Sunny  Cool   Normal    Weak  Yes
+9   D10      Rain  Mild   Normal    Weak  Yes
+10  D11     Sunny  Mild   Normal  Strong  Yes
+11  D12  Overcast  Mild     High  Strong  Yes
+12  D13  Overcast   Hot   Normal    Weak  Yes
+13  D14      Rain  Mild     High  Strong   No
+//Begin:
+** According to play/ with unique_instance_num = 2 **
+    day   outlook  temp humidity    wind play
+0    D1     Sunny   Hot     High    Weak   No
+1    D2     Sunny   Hot     High  Strong   No
+2    D3  Overcast   Hot     High    Weak  Yes
+3    D4      Rain  Mild     High    Weak  Yes
+4    D5      Rain  Cool   Normal    Weak  Yes
+5    D6      Rain  Cool   Normal  Strong   No
+6    D7  Overcast  Cool   Normal  Strong  Yes
+7    D8     Sunny  Mild     High    Weak   No
+8    D9     Sunny  Cool   Normal    Weak  Yes
+9   D10      Rain  Mild   Normal    Weak  Yes
+10  D11     Sunny  Mild   Normal  Strong  Yes
+11  D12  Overcast  Mild     High  Strong  Yes
+12  D13  Overcast   Hot   Normal    Weak  Yes
+13  D14      Rain  Mild     High  Strong   No
+0      No
+1      No
+2     Yes
+3     Yes
+4     Yes
+5      No
+6     Yes
+7      No
+8     Yes
+9     Yes
+10    Yes
+11    Yes
+12    Yes
+13     No
+Name: play, dtype: object
+Unique: ['No' 'Yes']
+Indices: [5 9]
+Argmax_index:  1
+Parent node class:  Yes
+Tap features:  Index(['outlook', 'temp', 'humidity', 'wind'], dtype='object')
+['Cool' 'High' 'Hot' 'Mild' 'Normal' 'Overcast' 'Rain' 'Strong' 'Sunny'
+ 'Weak']
+[4 7 4 6 7 4 5 6 5 8]
+56
+Cool
+Index(['outlook', 'temp', 'humidity', 'wind'], dtype='object')
+0.07142857142857142
+    day outlook  temp humidity wind play
+0   NaN     NaN   NaN      NaN  NaN  NaN
+1   NaN     NaN   NaN      NaN  NaN  NaN
+2   NaN     NaN   NaN      NaN  NaN  NaN
+3   NaN     NaN   NaN      NaN  NaN  NaN
+4   NaN     NaN  Cool      NaN  NaN  NaN
+5   NaN     NaN  Cool      NaN  NaN  NaN
+6   NaN     NaN  Cool      NaN  NaN  NaN
+7   NaN     NaN   NaN      NaN  NaN  NaN
+8   NaN     NaN  Cool      NaN  NaN  NaN
+9   NaN     NaN   NaN      NaN  NaN  NaN
+10  NaN     NaN   NaN      NaN  NaN  NaN
+11  NaN     NaN   NaN      NaN  NaN  NaN
+12  NaN     NaN   NaN      NaN  NaN  NaN
+13  NaN     NaN   NaN      NaN  NaN  NaN
+0.27195392300411464
+High
+Index(['outlook', 'temp', 'humidity', 'wind'], dtype='object')
+0.125
+    day outlook temp humidity wind play
+0   NaN     NaN  NaN     High  NaN  NaN
+1   NaN     NaN  NaN     High  NaN  NaN
+2   NaN     NaN  NaN     High  NaN  NaN
+3   NaN     NaN  NaN     High  NaN  NaN
+4   NaN     NaN  NaN      NaN  NaN  NaN
+5   NaN     NaN  NaN      NaN  NaN  NaN
+6   NaN     NaN  NaN      NaN  NaN  NaN
+7   NaN     NaN  NaN     High  NaN  NaN
+8   NaN     NaN  NaN      NaN  NaN  NaN
+9   NaN     NaN  NaN      NaN  NaN  NaN
+10  NaN     NaN  NaN      NaN  NaN  NaN
+11  NaN     NaN  NaN     High  NaN  NaN
+12  NaN     NaN  NaN      NaN  NaN  NaN
+13  NaN     NaN  NaN     High  NaN  NaN
+0.7478732882613153
+Hot
+Index(['outlook', 'temp', 'humidity', 'wind'], dtype='object')
+0.07142857142857142
+    day outlook temp humidity wind play
+0   NaN     NaN  Hot      NaN  NaN  NaN
+1   NaN     NaN  Hot      NaN  NaN  NaN
+2   NaN     NaN  Hot      NaN  NaN  NaN
+3   NaN     NaN  NaN      NaN  NaN  NaN
+4   NaN     NaN  NaN      NaN  NaN  NaN
+5   NaN     NaN  NaN      NaN  NaN  NaN
+6   NaN     NaN  NaN      NaN  NaN  NaN
+7   NaN     NaN  NaN      NaN  NaN  NaN
+8   NaN     NaN  NaN      NaN  NaN  NaN
+9   NaN     NaN  NaN      NaN  NaN  NaN
+10  NaN     NaN  NaN      NaN  NaN  NaN
+11  NaN     NaN  NaN      NaN  NaN  NaN
+12  NaN     NaN  Hot      NaN  NaN  NaN
+13  NaN     NaN  NaN      NaN  NaN  NaN
+1.0198272112654299
+Mild
+Index(['outlook', 'temp', 'humidity', 'wind'], dtype='object')
+0.10714285714285714
+    day outlook  temp humidity wind play
+0   NaN     NaN   NaN      NaN  NaN  NaN
+1   NaN     NaN   NaN      NaN  NaN  NaN
+2   NaN     NaN   NaN      NaN  NaN  NaN
+3   NaN     NaN  Mild      NaN  NaN  NaN
+4   NaN     NaN   NaN      NaN  NaN  NaN
+5   NaN     NaN   NaN      NaN  NaN  NaN
+6   NaN     NaN   NaN      NaN  NaN  NaN
+7   NaN     NaN  Mild      NaN  NaN  NaN
+8   NaN     NaN   NaN      NaN  NaN  NaN
+9   NaN     NaN  Mild      NaN  NaN  NaN
+10  NaN     NaN  Mild      NaN  NaN  NaN
+11  NaN     NaN  Mild      NaN  NaN  NaN
+12  NaN     NaN   NaN      NaN  NaN  NaN
+13  NaN     NaN  Mild      NaN  NaN  NaN
+1.4277580957716018
+Normal
+Index(['outlook', 'temp', 'humidity', 'wind'], dtype='object')
+0.125
+    day outlook temp humidity wind play
+0   NaN     NaN  NaN      NaN  NaN  NaN
+1   NaN     NaN  NaN      NaN  NaN  NaN
+2   NaN     NaN  NaN      NaN  NaN  NaN
+3   NaN     NaN  NaN      NaN  NaN  NaN
+4   NaN     NaN  NaN   Normal  NaN  NaN
+5   NaN     NaN  NaN   Normal  NaN  NaN
+6   NaN     NaN  NaN   Normal  NaN  NaN
+7   NaN     NaN  NaN      NaN  NaN  NaN
+8   NaN     NaN  NaN   Normal  NaN  NaN
+9   NaN     NaN  NaN   Normal  NaN  NaN
+10  NaN     NaN  NaN   Normal  NaN  NaN
+11  NaN     NaN  NaN      NaN  NaN  NaN
+12  NaN     NaN  NaN   Normal  NaN  NaN
+13  NaN     NaN  NaN      NaN  NaN  NaN
+1.9036774610288025
+Overcast
+Index(['outlook', 'temp', 'humidity', 'wind'], dtype='object')
+0.07142857142857142
+    day   outlook temp humidity wind play
+0   NaN       NaN  NaN      NaN  NaN  NaN
+1   NaN       NaN  NaN      NaN  NaN  NaN
+2   NaN  Overcast  NaN      NaN  NaN  NaN
+3   NaN       NaN  NaN      NaN  NaN  NaN
+4   NaN       NaN  NaN      NaN  NaN  NaN
+5   NaN       NaN  NaN      NaN  NaN  NaN
+6   NaN  Overcast  NaN      NaN  NaN  NaN
+7   NaN       NaN  NaN      NaN  NaN  NaN
+8   NaN       NaN  NaN      NaN  NaN  NaN
+9   NaN       NaN  NaN      NaN  NaN  NaN
+10  NaN       NaN  NaN      NaN  NaN  NaN
+11  NaN  Overcast  NaN      NaN  NaN  NaN
+12  NaN  Overcast  NaN      NaN  NaN  NaN
+13  NaN       NaN  NaN      NaN  NaN  NaN
+2.175631384032917
+Rain
+Index(['outlook', 'temp', 'humidity', 'wind'], dtype='object')
+0.08928571428571429
+    day outlook temp humidity wind play
+0   NaN     NaN  NaN      NaN  NaN  NaN
+1   NaN     NaN  NaN      NaN  NaN  NaN
+2   NaN     NaN  NaN      NaN  NaN  NaN
+3   NaN    Rain  NaN      NaN  NaN  NaN
+4   NaN    Rain  NaN      NaN  NaN  NaN
+5   NaN    Rain  NaN      NaN  NaN  NaN
+6   NaN     NaN  NaN      NaN  NaN  NaN
+7   NaN     NaN  NaN      NaN  NaN  NaN
+8   NaN     NaN  NaN      NaN  NaN  NaN
+9   NaN    Rain  NaN      NaN  NaN  NaN
+10  NaN     NaN  NaN      NaN  NaN  NaN
+11  NaN     NaN  NaN      NaN  NaN  NaN
+12  NaN     NaN  NaN      NaN  NaN  NaN
+13  NaN    Rain  NaN      NaN  NaN  NaN
+2.5155737877880604
+Strong
+Index(['outlook', 'temp', 'humidity', 'wind'], dtype='object')
+0.10714285714285714
+    day outlook temp humidity    wind play
+0   NaN     NaN  NaN      NaN     NaN  NaN
+1   NaN     NaN  NaN      NaN  Strong  NaN
+2   NaN     NaN  NaN      NaN     NaN  NaN
+3   NaN     NaN  NaN      NaN     NaN  NaN
+4   NaN     NaN  NaN      NaN     NaN  NaN
+5   NaN     NaN  NaN      NaN  Strong  NaN
+6   NaN     NaN  NaN      NaN  Strong  NaN
+7   NaN     NaN  NaN      NaN     NaN  NaN
+8   NaN     NaN  NaN      NaN     NaN  NaN
+9   NaN     NaN  NaN      NaN     NaN  NaN
+10  NaN     NaN  NaN      NaN  Strong  NaN
+11  NaN     NaN  NaN      NaN  Strong  NaN
+12  NaN     NaN  NaN      NaN     NaN  NaN
+13  NaN     NaN  NaN      NaN  Strong  NaN
+2.923504672294232
+Sunny
+Index(['outlook', 'temp', 'humidity', 'wind'], dtype='object')
+0.08928571428571429
+    day outlook temp humidity wind play
+0   NaN   Sunny  NaN      NaN  NaN  NaN
+1   NaN   Sunny  NaN      NaN  NaN  NaN
+2   NaN     NaN  NaN      NaN  NaN  NaN
+3   NaN     NaN  NaN      NaN  NaN  NaN
+4   NaN     NaN  NaN      NaN  NaN  NaN
+5   NaN     NaN  NaN      NaN  NaN  NaN
+6   NaN     NaN  NaN      NaN  NaN  NaN
+7   NaN   Sunny  NaN      NaN  NaN  NaN
+8   NaN   Sunny  NaN      NaN  NaN  NaN
+9   NaN     NaN  NaN      NaN  NaN  NaN
+10  NaN   Sunny  NaN      NaN  NaN  NaN
+11  NaN     NaN  NaN      NaN  NaN  NaN
+12  NaN     NaN  NaN      NaN  NaN  NaN
+13  NaN     NaN  NaN      NaN  NaN  NaN
+3.2634470760493755
+Weak
+Index(['outlook', 'temp', 'humidity', 'wind'], dtype='object')
+0.14285714285714285
+    day outlook temp humidity  wind play
+0   NaN     NaN  NaN      NaN  Weak  NaN
+1   NaN     NaN  NaN      NaN   NaN  NaN
+2   NaN     NaN  NaN      NaN  Weak  NaN
+3   NaN     NaN  NaN      NaN  Weak  NaN
+4   NaN     NaN  NaN      NaN  Weak  NaN
+5   NaN     NaN  NaN      NaN   NaN  NaN
+6   NaN     NaN  NaN      NaN   NaN  NaN
+7   NaN     NaN  NaN      NaN  Weak  NaN
+8   NaN     NaN  NaN      NaN  Weak  NaN
+9   NaN     NaN  NaN      NaN  Weak  NaN
+10  NaN     NaN  NaN      NaN   NaN  NaN
+11  NaN     NaN  NaN      NaN   NaN  NaN
+12  NaN     NaN  NaN      NaN  Weak  NaN
+13  NaN     NaN  NaN      NaN   NaN  NaN
+3.8073549220576046
+-2.8670689633869735
+['Cool' 'High' 'Hot' 'Mild' 'Normal' 'Overcast' 'Rain' 'Strong' 'Sunny'
+ 'Weak']
+[4 7 4 6 7 4 5 6 5 8]
+56
+Cool
+Index(['outlook', 'temp', 'humidity', 'wind'], dtype='object')
+0.07142857142857142
+    day outlook  temp humidity wind play
+0   NaN     NaN   NaN      NaN  NaN  NaN
+1   NaN     NaN   NaN      NaN  NaN  NaN
+2   NaN     NaN   NaN      NaN  NaN  NaN
+3   NaN     NaN   NaN      NaN  NaN  NaN
+4   NaN     NaN  Cool      NaN  NaN  NaN
+5   NaN     NaN  Cool      NaN  NaN  NaN
+6   NaN     NaN  Cool      NaN  NaN  NaN
+7   NaN     NaN   NaN      NaN  NaN  NaN
+8   NaN     NaN  Cool      NaN  NaN  NaN
+9   NaN     NaN   NaN      NaN  NaN  NaN
+10  NaN     NaN   NaN      NaN  NaN  NaN
+11  NaN     NaN   NaN      NaN  NaN  NaN
+12  NaN     NaN   NaN      NaN  NaN  NaN
+13  NaN     NaN   NaN      NaN  NaN  NaN
+0.27195392300411464
+High
+Index(['outlook', 'temp', 'humidity', 'wind'], dtype='object')
+0.125
+    day outlook temp humidity wind play
+0   NaN     NaN  NaN     High  NaN  NaN
+1   NaN     NaN  NaN     High  NaN  NaN
+2   NaN     NaN  NaN     High  NaN  NaN
+3   NaN     NaN  NaN     High  NaN  NaN
+4   NaN     NaN  NaN      NaN  NaN  NaN
+5   NaN     NaN  NaN      NaN  NaN  NaN
+6   NaN     NaN  NaN      NaN  NaN  NaN
+7   NaN     NaN  NaN     High  NaN  NaN
+8   NaN     NaN  NaN      NaN  NaN  NaN
+9   NaN     NaN  NaN      NaN  NaN  NaN
+10  NaN     NaN  NaN      NaN  NaN  NaN
+11  NaN     NaN  NaN     High  NaN  NaN
+12  NaN     NaN  NaN      NaN  NaN  NaN
+13  NaN     NaN  NaN     High  NaN  NaN
+0.7478732882613153
+Hot
+Index(['outlook', 'temp', 'humidity', 'wind'], dtype='object')
+0.07142857142857142
+    day outlook temp humidity wind play
+0   NaN     NaN  Hot      NaN  NaN  NaN
+1   NaN     NaN  Hot      NaN  NaN  NaN
+2   NaN     NaN  Hot      NaN  NaN  NaN
+3   NaN     NaN  NaN      NaN  NaN  NaN
+4   NaN     NaN  NaN      NaN  NaN  NaN
+5   NaN     NaN  NaN      NaN  NaN  NaN
+6   NaN     NaN  NaN      NaN  NaN  NaN
+7   NaN     NaN  NaN      NaN  NaN  NaN
+8   NaN     NaN  NaN      NaN  NaN  NaN
+9   NaN     NaN  NaN      NaN  NaN  NaN
+10  NaN     NaN  NaN      NaN  NaN  NaN
+11  NaN     NaN  NaN      NaN  NaN  NaN
+12  NaN     NaN  Hot      NaN  NaN  NaN
+13  NaN     NaN  NaN      NaN  NaN  NaN
+1.0198272112654299
+Mild
+Index(['outlook', 'temp', 'humidity', 'wind'], dtype='object')
+0.10714285714285714
+    day outlook  temp humidity wind play
+0   NaN     NaN   NaN      NaN  NaN  NaN
+1   NaN     NaN   NaN      NaN  NaN  NaN
+2   NaN     NaN   NaN      NaN  NaN  NaN
+3   NaN     NaN  Mild      NaN  NaN  NaN
+4   NaN     NaN   NaN      NaN  NaN  NaN
+5   NaN     NaN   NaN      NaN  NaN  NaN
+6   NaN     NaN   NaN      NaN  NaN  NaN
+7   NaN     NaN  Mild      NaN  NaN  NaN
+8   NaN     NaN   NaN      NaN  NaN  NaN
+9   NaN     NaN  Mild      NaN  NaN  NaN
+10  NaN     NaN  Mild      NaN  NaN  NaN
+11  NaN     NaN  Mild      NaN  NaN  NaN
+12  NaN     NaN   NaN      NaN  NaN  NaN
+13  NaN     NaN  Mild      NaN  NaN  NaN
+1.4277580957716018
+Normal
+Index(['outlook', 'temp', 'humidity', 'wind'], dtype='object')
+0.125
+    day outlook temp humidity wind play
+0   NaN     NaN  NaN      NaN  NaN  NaN
+1   NaN     NaN  NaN      NaN  NaN  NaN
+2   NaN     NaN  NaN      NaN  NaN  NaN
+3   NaN     NaN  NaN      NaN  NaN  NaN
+4   NaN     NaN  NaN   Normal  NaN  NaN
+5   NaN     NaN  NaN   Normal  NaN  NaN
+6   NaN     NaN  NaN   Normal  NaN  NaN
+7   NaN     NaN  NaN      NaN  NaN  NaN
+8   NaN     NaN  NaN   Normal  NaN  NaN
+9   NaN     NaN  NaN   Normal  NaN  NaN
+10  NaN     NaN  NaN   Normal  NaN  NaN
+11  NaN     NaN  NaN      NaN  NaN  NaN
+12  NaN     NaN  NaN   Normal  NaN  NaN
+13  NaN     NaN  NaN      NaN  NaN  NaN
+1.9036774610288025
+Overcast
+Index(['outlook', 'temp', 'humidity', 'wind'], dtype='object')
+0.07142857142857142
+    day   outlook temp humidity wind play
+0   NaN       NaN  NaN      NaN  NaN  NaN
+1   NaN       NaN  NaN      NaN  NaN  NaN
+2   NaN  Overcast  NaN      NaN  NaN  NaN
+3   NaN       NaN  NaN      NaN  NaN  NaN
+4   NaN       NaN  NaN      NaN  NaN  NaN
+5   NaN       NaN  NaN      NaN  NaN  NaN
+6   NaN  Overcast  NaN      NaN  NaN  NaN
+7   NaN       NaN  NaN      NaN  NaN  NaN
+8   NaN       NaN  NaN      NaN  NaN  NaN
+9   NaN       NaN  NaN      NaN  NaN  NaN
+10  NaN       NaN  NaN      NaN  NaN  NaN
+11  NaN  Overcast  NaN      NaN  NaN  NaN
+12  NaN  Overcast  NaN      NaN  NaN  NaN
+13  NaN       NaN  NaN      NaN  NaN  NaN
+2.175631384032917
+Rain
+Index(['outlook', 'temp', 'humidity', 'wind'], dtype='object')
+0.08928571428571429
+    day outlook temp humidity wind play
+0   NaN     NaN  NaN      NaN  NaN  NaN
+1   NaN     NaN  NaN      NaN  NaN  NaN
+2   NaN     NaN  NaN      NaN  NaN  NaN
+3   NaN    Rain  NaN      NaN  NaN  NaN
+4   NaN    Rain  NaN      NaN  NaN  NaN
+5   NaN    Rain  NaN      NaN  NaN  NaN
+6   NaN     NaN  NaN      NaN  NaN  NaN
+7   NaN     NaN  NaN      NaN  NaN  NaN
+8   NaN     NaN  NaN      NaN  NaN  NaN
+9   NaN    Rain  NaN      NaN  NaN  NaN
+10  NaN     NaN  NaN      NaN  NaN  NaN
+11  NaN     NaN  NaN      NaN  NaN  NaN
+12  NaN     NaN  NaN      NaN  NaN  NaN
+13  NaN    Rain  NaN      NaN  NaN  NaN
+2.5155737877880604
+Strong
+Index(['outlook', 'temp', 'humidity', 'wind'], dtype='object')
+0.10714285714285714
+    day outlook temp humidity    wind play
+0   NaN     NaN  NaN      NaN     NaN  NaN
+1   NaN     NaN  NaN      NaN  Strong  NaN
+2   NaN     NaN  NaN      NaN     NaN  NaN
+3   NaN     NaN  NaN      NaN     NaN  NaN
+4   NaN     NaN  NaN      NaN     NaN  NaN
+5   NaN     NaN  NaN      NaN  Strong  NaN
+6   NaN     NaN  NaN      NaN  Strong  NaN
+7   NaN     NaN  NaN      NaN     NaN  NaN
+8   NaN     NaN  NaN      NaN     NaN  NaN
+9   NaN     NaN  NaN      NaN     NaN  NaN
+10  NaN     NaN  NaN      NaN  Strong  NaN
+11  NaN     NaN  NaN      NaN  Strong  NaN
+12  NaN     NaN  NaN      NaN     NaN  NaN
+13  NaN     NaN  NaN      NaN  Strong  NaN
+2.923504672294232
+Sunny
+Index(['outlook', 'temp', 'humidity', 'wind'], dtype='object')
+0.08928571428571429
+    day outlook temp humidity wind play
+0   NaN   Sunny  NaN      NaN  NaN  NaN
+1   NaN   Sunny  NaN      NaN  NaN  NaN
+2   NaN     NaN  NaN      NaN  NaN  NaN
+3   NaN     NaN  NaN      NaN  NaN  NaN
+4   NaN     NaN  NaN      NaN  NaN  NaN
+5   NaN     NaN  NaN      NaN  NaN  NaN
+6   NaN     NaN  NaN      NaN  NaN  NaN
+7   NaN   Sunny  NaN      NaN  NaN  NaN
+8   NaN   Sunny  NaN      NaN  NaN  NaN
+9   NaN     NaN  NaN      NaN  NaN  NaN
+10  NaN   Sunny  NaN      NaN  NaN  NaN
+11  NaN     NaN  NaN      NaN  NaN  NaN
+12  NaN     NaN  NaN      NaN  NaN  NaN
+13  NaN     NaN  NaN      NaN  NaN  NaN
+3.2634470760493755
+Weak
+Index(['outlook', 'temp', 'humidity', 'wind'], dtype='object')
+0.14285714285714285
+    day outlook temp humidity  wind play
+0   NaN     NaN  NaN      NaN  Weak  NaN
+1   NaN     NaN  NaN      NaN   NaN  NaN
+2   NaN     NaN  NaN      NaN  Weak  NaN
+3   NaN     NaN  NaN      NaN  Weak  NaN
+4   NaN     NaN  NaN      NaN  Weak  NaN
+5   NaN     NaN  NaN      NaN   NaN  NaN
+6   NaN     NaN  NaN      NaN   NaN  NaN
+7   NaN     NaN  NaN      NaN  Weak  NaN
+8   NaN     NaN  NaN      NaN  Weak  NaN
+9   NaN     NaN  NaN      NaN  Weak  NaN
+10  NaN     NaN  NaN      NaN   NaN  NaN
+11  NaN     NaN  NaN      NaN   NaN  NaN
+12  NaN     NaN  NaN      NaN  Weak  NaN
+13  NaN     NaN  NaN      NaN   NaN  NaN
+3.8073549220576046
+-2.8670689633869735
+['Cool' 'High' 'Hot' 'Mild' 'Normal' 'Overcast' 'Rain' 'Strong' 'Sunny'
+ 'Weak']
+[4 7 4 6 7 4 5 6 5 8]
+56
+Cool
+Index(['outlook', 'temp', 'humidity', 'wind'], dtype='object')
+0.07142857142857142
+    day outlook  temp humidity wind play
+0   NaN     NaN   NaN      NaN  NaN  NaN
+1   NaN     NaN   NaN      NaN  NaN  NaN
+2   NaN     NaN   NaN      NaN  NaN  NaN
+3   NaN     NaN   NaN      NaN  NaN  NaN
+4   NaN     NaN  Cool      NaN  NaN  NaN
+5   NaN     NaN  Cool      NaN  NaN  NaN
+6   NaN     NaN  Cool      NaN  NaN  NaN
+7   NaN     NaN   NaN      NaN  NaN  NaN
+8   NaN     NaN  Cool      NaN  NaN  NaN
+9   NaN     NaN   NaN      NaN  NaN  NaN
+10  NaN     NaN   NaN      NaN  NaN  NaN
+11  NaN     NaN   NaN      NaN  NaN  NaN
+12  NaN     NaN   NaN      NaN  NaN  NaN
+13  NaN     NaN   NaN      NaN  NaN  NaN
+0.27195392300411464
+High
+Index(['outlook', 'temp', 'humidity', 'wind'], dtype='object')
+0.125
+    day outlook temp humidity wind play
+0   NaN     NaN  NaN     High  NaN  NaN
+1   NaN     NaN  NaN     High  NaN  NaN
+2   NaN     NaN  NaN     High  NaN  NaN
+3   NaN     NaN  NaN     High  NaN  NaN
+4   NaN     NaN  NaN      NaN  NaN  NaN
+5   NaN     NaN  NaN      NaN  NaN  NaN
+6   NaN     NaN  NaN      NaN  NaN  NaN
+7   NaN     NaN  NaN     High  NaN  NaN
+8   NaN     NaN  NaN      NaN  NaN  NaN
+9   NaN     NaN  NaN      NaN  NaN  NaN
+10  NaN     NaN  NaN      NaN  NaN  NaN
+11  NaN     NaN  NaN     High  NaN  NaN
+12  NaN     NaN  NaN      NaN  NaN  NaN
+13  NaN     NaN  NaN     High  NaN  NaN
+0.7478732882613153
+Hot
+Index(['outlook', 'temp', 'humidity', 'wind'], dtype='object')
+0.07142857142857142
+    day outlook temp humidity wind play
+0   NaN     NaN  Hot      NaN  NaN  NaN
+1   NaN     NaN  Hot      NaN  NaN  NaN
+2   NaN     NaN  Hot      NaN  NaN  NaN
+3   NaN     NaN  NaN      NaN  NaN  NaN
+4   NaN     NaN  NaN      NaN  NaN  NaN
+5   NaN     NaN  NaN      NaN  NaN  NaN
+6   NaN     NaN  NaN      NaN  NaN  NaN
+7   NaN     NaN  NaN      NaN  NaN  NaN
+8   NaN     NaN  NaN      NaN  NaN  NaN
+9   NaN     NaN  NaN      NaN  NaN  NaN
+10  NaN     NaN  NaN      NaN  NaN  NaN
+11  NaN     NaN  NaN      NaN  NaN  NaN
+12  NaN     NaN  Hot      NaN  NaN  NaN
+13  NaN     NaN  NaN      NaN  NaN  NaN
+1.0198272112654299
+Mild
+Index(['outlook', 'temp', 'humidity', 'wind'], dtype='object')
+0.10714285714285714
+    day outlook  temp humidity wind play
+0   NaN     NaN   NaN      NaN  NaN  NaN
+1   NaN     NaN   NaN      NaN  NaN  NaN
+2   NaN     NaN   NaN      NaN  NaN  NaN
+3   NaN     NaN  Mild      NaN  NaN  NaN
+4   NaN     NaN   NaN      NaN  NaN  NaN
+5   NaN     NaN   NaN      NaN  NaN  NaN
+6   NaN     NaN   NaN      NaN  NaN  NaN
+7   NaN     NaN  Mild      NaN  NaN  NaN
+8   NaN     NaN   NaN      NaN  NaN  NaN
+9   NaN     NaN  Mild      NaN  NaN  NaN
+10  NaN     NaN  Mild      NaN  NaN  NaN
+11  NaN     NaN  Mild      NaN  NaN  NaN
+12  NaN     NaN   NaN      NaN  NaN  NaN
+13  NaN     NaN  Mild      NaN  NaN  NaN
+1.4277580957716018
+Normal
+Index(['outlook', 'temp', 'humidity', 'wind'], dtype='object')
+0.125
+    day outlook temp humidity wind play
+0   NaN     NaN  NaN      NaN  NaN  NaN
+1   NaN     NaN  NaN      NaN  NaN  NaN
+2   NaN     NaN  NaN      NaN  NaN  NaN
+3   NaN     NaN  NaN      NaN  NaN  NaN
+4   NaN     NaN  NaN   Normal  NaN  NaN
+5   NaN     NaN  NaN   Normal  NaN  NaN
+6   NaN     NaN  NaN   Normal  NaN  NaN
+7   NaN     NaN  NaN      NaN  NaN  NaN
+8   NaN     NaN  NaN   Normal  NaN  NaN
+9   NaN     NaN  NaN   Normal  NaN  NaN
+10  NaN     NaN  NaN   Normal  NaN  NaN
+11  NaN     NaN  NaN      NaN  NaN  NaN
+12  NaN     NaN  NaN   Normal  NaN  NaN
+13  NaN     NaN  NaN      NaN  NaN  NaN
+1.9036774610288025
+Overcast
+Index(['outlook', 'temp', 'humidity', 'wind'], dtype='object')
+0.07142857142857142
+    day   outlook temp humidity wind play
+0   NaN       NaN  NaN      NaN  NaN  NaN
+1   NaN       NaN  NaN      NaN  NaN  NaN
+2   NaN  Overcast  NaN      NaN  NaN  NaN
+3   NaN       NaN  NaN      NaN  NaN  NaN
+4   NaN       NaN  NaN      NaN  NaN  NaN
+5   NaN       NaN  NaN      NaN  NaN  NaN
+6   NaN  Overcast  NaN      NaN  NaN  NaN
+7   NaN       NaN  NaN      NaN  NaN  NaN
+8   NaN       NaN  NaN      NaN  NaN  NaN
+9   NaN       NaN  NaN      NaN  NaN  NaN
+10  NaN       NaN  NaN      NaN  NaN  NaN
+11  NaN  Overcast  NaN      NaN  NaN  NaN
+12  NaN  Overcast  NaN      NaN  NaN  NaN
+13  NaN       NaN  NaN      NaN  NaN  NaN
+2.175631384032917
+Rain
+Index(['outlook', 'temp', 'humidity', 'wind'], dtype='object')
+0.08928571428571429
+    day outlook temp humidity wind play
+0   NaN     NaN  NaN      NaN  NaN  NaN
+1   NaN     NaN  NaN      NaN  NaN  NaN
+2   NaN     NaN  NaN      NaN  NaN  NaN
+3   NaN    Rain  NaN      NaN  NaN  NaN
+4   NaN    Rain  NaN      NaN  NaN  NaN
+5   NaN    Rain  NaN      NaN  NaN  NaN
+6   NaN     NaN  NaN      NaN  NaN  NaN
+7   NaN     NaN  NaN      NaN  NaN  NaN
+8   NaN     NaN  NaN      NaN  NaN  NaN
+9   NaN    Rain  NaN      NaN  NaN  NaN
+10  NaN     NaN  NaN      NaN  NaN  NaN
+11  NaN     NaN  NaN      NaN  NaN  NaN
+12  NaN     NaN  NaN      NaN  NaN  NaN
+13  NaN    Rain  NaN      NaN  NaN  NaN
+2.5155737877880604
+Strong
+Index(['outlook', 'temp', 'humidity', 'wind'], dtype='object')
+0.10714285714285714
+    day outlook temp humidity    wind play
+0   NaN     NaN  NaN      NaN     NaN  NaN
+1   NaN     NaN  NaN      NaN  Strong  NaN
+2   NaN     NaN  NaN      NaN     NaN  NaN
+3   NaN     NaN  NaN      NaN     NaN  NaN
+4   NaN     NaN  NaN      NaN     NaN  NaN
+5   NaN     NaN  NaN      NaN  Strong  NaN
+6   NaN     NaN  NaN      NaN  Strong  NaN
+7   NaN     NaN  NaN      NaN     NaN  NaN
+8   NaN     NaN  NaN      NaN     NaN  NaN
+9   NaN     NaN  NaN      NaN     NaN  NaN
+10  NaN     NaN  NaN      NaN  Strong  NaN
+11  NaN     NaN  NaN      NaN  Strong  NaN
+12  NaN     NaN  NaN      NaN     NaN  NaN
+13  NaN     NaN  NaN      NaN  Strong  NaN
+2.923504672294232
+Sunny
+Index(['outlook', 'temp', 'humidity', 'wind'], dtype='object')
+0.08928571428571429
+    day outlook temp humidity wind play
+0   NaN   Sunny  NaN      NaN  NaN  NaN
+1   NaN   Sunny  NaN      NaN  NaN  NaN
+2   NaN     NaN  NaN      NaN  NaN  NaN
+3   NaN     NaN  NaN      NaN  NaN  NaN
+4   NaN     NaN  NaN      NaN  NaN  NaN
+5   NaN     NaN  NaN      NaN  NaN  NaN
+6   NaN     NaN  NaN      NaN  NaN  NaN
+7   NaN   Sunny  NaN      NaN  NaN  NaN
+8   NaN   Sunny  NaN      NaN  NaN  NaN
+9   NaN     NaN  NaN      NaN  NaN  NaN
+10  NaN   Sunny  NaN      NaN  NaN  NaN
+11  NaN     NaN  NaN      NaN  NaN  NaN
+12  NaN     NaN  NaN      NaN  NaN  NaN
+13  NaN     NaN  NaN      NaN  NaN  NaN
+3.2634470760493755
+Weak
+Index(['outlook', 'temp', 'humidity', 'wind'], dtype='object')
+0.14285714285714285
+    day outlook temp humidity  wind play
+0   NaN     NaN  NaN      NaN  Weak  NaN
+1   NaN     NaN  NaN      NaN   NaN  NaN
+2   NaN     NaN  NaN      NaN  Weak  NaN
+3   NaN     NaN  NaN      NaN  Weak  NaN
+4   NaN     NaN  NaN      NaN  Weak  NaN
+5   NaN     NaN  NaN      NaN   NaN  NaN
+6   NaN     NaN  NaN      NaN   NaN  NaN
+7   NaN     NaN  NaN      NaN  Weak  NaN
+8   NaN     NaN  NaN      NaN  Weak  NaN
+9   NaN     NaN  NaN      NaN  Weak  NaN
+10  NaN     NaN  NaN      NaN   NaN  NaN
+11  NaN     NaN  NaN      NaN   NaN  NaN
+12  NaN     NaN  NaN      NaN  Weak  NaN
+13  NaN     NaN  NaN      NaN   NaN  NaN
+3.8073549220576046
+-2.8670689633869735
+['Cool' 'High' 'Hot' 'Mild' 'Normal' 'Overcast' 'Rain' 'Strong' 'Sunny'
+ 'Weak']
+[4 7 4 6 7 4 5 6 5 8]
+56
+Cool
+Index(['outlook', 'temp', 'humidity', 'wind'], dtype='object')
+0.07142857142857142
+    day outlook  temp humidity wind play
+0   NaN     NaN   NaN      NaN  NaN  NaN
+1   NaN     NaN   NaN      NaN  NaN  NaN
+2   NaN     NaN   NaN      NaN  NaN  NaN
+3   NaN     NaN   NaN      NaN  NaN  NaN
+4   NaN     NaN  Cool      NaN  NaN  NaN
+5   NaN     NaN  Cool      NaN  NaN  NaN
+6   NaN     NaN  Cool      NaN  NaN  NaN
+7   NaN     NaN   NaN      NaN  NaN  NaN
+8   NaN     NaN  Cool      NaN  NaN  NaN
+9   NaN     NaN   NaN      NaN  NaN  NaN
+10  NaN     NaN   NaN      NaN  NaN  NaN
+11  NaN     NaN   NaN      NaN  NaN  NaN
+12  NaN     NaN   NaN      NaN  NaN  NaN
+13  NaN     NaN   NaN      NaN  NaN  NaN
+0.27195392300411464
+High
+Index(['outlook', 'temp', 'humidity', 'wind'], dtype='object')
+0.125
+    day outlook temp humidity wind play
+0   NaN     NaN  NaN     High  NaN  NaN
+1   NaN     NaN  NaN     High  NaN  NaN
+2   NaN     NaN  NaN     High  NaN  NaN
+3   NaN     NaN  NaN     High  NaN  NaN
+4   NaN     NaN  NaN      NaN  NaN  NaN
+5   NaN     NaN  NaN      NaN  NaN  NaN
+6   NaN     NaN  NaN      NaN  NaN  NaN
+7   NaN     NaN  NaN     High  NaN  NaN
+8   NaN     NaN  NaN      NaN  NaN  NaN
+9   NaN     NaN  NaN      NaN  NaN  NaN
+10  NaN     NaN  NaN      NaN  NaN  NaN
+11  NaN     NaN  NaN     High  NaN  NaN
+12  NaN     NaN  NaN      NaN  NaN  NaN
+13  NaN     NaN  NaN     High  NaN  NaN
+0.7478732882613153
+Hot
+Index(['outlook', 'temp', 'humidity', 'wind'], dtype='object')
+0.07142857142857142
+    day outlook temp humidity wind play
+0   NaN     NaN  Hot      NaN  NaN  NaN
+1   NaN     NaN  Hot      NaN  NaN  NaN
+2   NaN     NaN  Hot      NaN  NaN  NaN
+3   NaN     NaN  NaN      NaN  NaN  NaN
+4   NaN     NaN  NaN      NaN  NaN  NaN
+5   NaN     NaN  NaN      NaN  NaN  NaN
+6   NaN     NaN  NaN      NaN  NaN  NaN
+7   NaN     NaN  NaN      NaN  NaN  NaN
+8   NaN     NaN  NaN      NaN  NaN  NaN
+9   NaN     NaN  NaN      NaN  NaN  NaN
+10  NaN     NaN  NaN      NaN  NaN  NaN
+11  NaN     NaN  NaN      NaN  NaN  NaN
+12  NaN     NaN  Hot      NaN  NaN  NaN
+13  NaN     NaN  NaN      NaN  NaN  NaN
+1.0198272112654299
+Mild
+Index(['outlook', 'temp', 'humidity', 'wind'], dtype='object')
+0.10714285714285714
+    day outlook  temp humidity wind play
+0   NaN     NaN   NaN      NaN  NaN  NaN
+1   NaN     NaN   NaN      NaN  NaN  NaN
+2   NaN     NaN   NaN      NaN  NaN  NaN
+3   NaN     NaN  Mild      NaN  NaN  NaN
+4   NaN     NaN   NaN      NaN  NaN  NaN
+5   NaN     NaN   NaN      NaN  NaN  NaN
+6   NaN     NaN   NaN      NaN  NaN  NaN
+7   NaN     NaN  Mild      NaN  NaN  NaN
+8   NaN     NaN   NaN      NaN  NaN  NaN
+9   NaN     NaN  Mild      NaN  NaN  NaN
+10  NaN     NaN  Mild      NaN  NaN  NaN
+11  NaN     NaN  Mild      NaN  NaN  NaN
+12  NaN     NaN   NaN      NaN  NaN  NaN
+13  NaN     NaN  Mild      NaN  NaN  NaN
+1.4277580957716018
+Normal
+Index(['outlook', 'temp', 'humidity', 'wind'], dtype='object')
+0.125
+    day outlook temp humidity wind play
+0   NaN     NaN  NaN      NaN  NaN  NaN
+1   NaN     NaN  NaN      NaN  NaN  NaN
+2   NaN     NaN  NaN      NaN  NaN  NaN
+3   NaN     NaN  NaN      NaN  NaN  NaN
+4   NaN     NaN  NaN   Normal  NaN  NaN
+5   NaN     NaN  NaN   Normal  NaN  NaN
+6   NaN     NaN  NaN   Normal  NaN  NaN
+7   NaN     NaN  NaN      NaN  NaN  NaN
+8   NaN     NaN  NaN   Normal  NaN  NaN
+9   NaN     NaN  NaN   Normal  NaN  NaN
+10  NaN     NaN  NaN   Normal  NaN  NaN
+11  NaN     NaN  NaN      NaN  NaN  NaN
+12  NaN     NaN  NaN   Normal  NaN  NaN
+13  NaN     NaN  NaN      NaN  NaN  NaN
+1.9036774610288025
+Overcast
+Index(['outlook', 'temp', 'humidity', 'wind'], dtype='object')
+0.07142857142857142
+    day   outlook temp humidity wind play
+0   NaN       NaN  NaN      NaN  NaN  NaN
+1   NaN       NaN  NaN      NaN  NaN  NaN
+2   NaN  Overcast  NaN      NaN  NaN  NaN
+3   NaN       NaN  NaN      NaN  NaN  NaN
+4   NaN       NaN  NaN      NaN  NaN  NaN
+5   NaN       NaN  NaN      NaN  NaN  NaN
+6   NaN  Overcast  NaN      NaN  NaN  NaN
+7   NaN       NaN  NaN      NaN  NaN  NaN
+8   NaN       NaN  NaN      NaN  NaN  NaN
+9   NaN       NaN  NaN      NaN  NaN  NaN
+10  NaN       NaN  NaN      NaN  NaN  NaN
+11  NaN  Overcast  NaN      NaN  NaN  NaN
+12  NaN  Overcast  NaN      NaN  NaN  NaN
+13  NaN       NaN  NaN      NaN  NaN  NaN
+2.175631384032917
+Rain
+Index(['outlook', 'temp', 'humidity', 'wind'], dtype='object')
+0.08928571428571429
+    day outlook temp humidity wind play
+0   NaN     NaN  NaN      NaN  NaN  NaN
+1   NaN     NaN  NaN      NaN  NaN  NaN
+2   NaN     NaN  NaN      NaN  NaN  NaN
+3   NaN    Rain  NaN      NaN  NaN  NaN
+4   NaN    Rain  NaN      NaN  NaN  NaN
+5   NaN    Rain  NaN      NaN  NaN  NaN
+6   NaN     NaN  NaN      NaN  NaN  NaN
+7   NaN     NaN  NaN      NaN  NaN  NaN
+8   NaN     NaN  NaN      NaN  NaN  NaN
+9   NaN    Rain  NaN      NaN  NaN  NaN
+10  NaN     NaN  NaN      NaN  NaN  NaN
+11  NaN     NaN  NaN      NaN  NaN  NaN
+12  NaN     NaN  NaN      NaN  NaN  NaN
+13  NaN    Rain  NaN      NaN  NaN  NaN
+2.5155737877880604
+Strong
+Index(['outlook', 'temp', 'humidity', 'wind'], dtype='object')
+0.10714285714285714
+    day outlook temp humidity    wind play
+0   NaN     NaN  NaN      NaN     NaN  NaN
+1   NaN     NaN  NaN      NaN  Strong  NaN
+2   NaN     NaN  NaN      NaN     NaN  NaN
+3   NaN     NaN  NaN      NaN     NaN  NaN
+4   NaN     NaN  NaN      NaN     NaN  NaN
+5   NaN     NaN  NaN      NaN  Strong  NaN
+6   NaN     NaN  NaN      NaN  Strong  NaN
+7   NaN     NaN  NaN      NaN     NaN  NaN
+8   NaN     NaN  NaN      NaN     NaN  NaN
+9   NaN     NaN  NaN      NaN     NaN  NaN
+10  NaN     NaN  NaN      NaN  Strong  NaN
+11  NaN     NaN  NaN      NaN  Strong  NaN
+12  NaN     NaN  NaN      NaN     NaN  NaN
+13  NaN     NaN  NaN      NaN  Strong  NaN
+2.923504672294232
+Sunny
+Index(['outlook', 'temp', 'humidity', 'wind'], dtype='object')
+0.08928571428571429
+    day outlook temp humidity wind play
+0   NaN   Sunny  NaN      NaN  NaN  NaN
+1   NaN   Sunny  NaN      NaN  NaN  NaN
+2   NaN     NaN  NaN      NaN  NaN  NaN
+3   NaN     NaN  NaN      NaN  NaN  NaN
+4   NaN     NaN  NaN      NaN  NaN  NaN
+5   NaN     NaN  NaN      NaN  NaN  NaN
+6   NaN     NaN  NaN      NaN  NaN  NaN
+7   NaN   Sunny  NaN      NaN  NaN  NaN
+8   NaN   Sunny  NaN      NaN  NaN  NaN
+9   NaN     NaN  NaN      NaN  NaN  NaN
+10  NaN   Sunny  NaN      NaN  NaN  NaN
+11  NaN     NaN  NaN      NaN  NaN  NaN
+12  NaN     NaN  NaN      NaN  NaN  NaN
+13  NaN     NaN  NaN      NaN  NaN  NaN
+3.2634470760493755
+Weak
+Index(['outlook', 'temp', 'humidity', 'wind'], dtype='object')
+0.14285714285714285
+    day outlook temp humidity  wind play
+0   NaN     NaN  NaN      NaN  Weak  NaN
+1   NaN     NaN  NaN      NaN   NaN  NaN
+2   NaN     NaN  NaN      NaN  Weak  NaN
+3   NaN     NaN  NaN      NaN  Weak  NaN
+4   NaN     NaN  NaN      NaN  Weak  NaN
+5   NaN     NaN  NaN      NaN   NaN  NaN
+6   NaN     NaN  NaN      NaN   NaN  NaN
+7   NaN     NaN  NaN      NaN  Weak  NaN
+8   NaN     NaN  NaN      NaN  Weak  NaN
+9   NaN     NaN  NaN      NaN  Weak  NaN
+10  NaN     NaN  NaN      NaN   NaN  NaN
+11  NaN     NaN  NaN      NaN   NaN  NaN
+12  NaN     NaN  NaN      NaN  Weak  NaN
+13  NaN     NaN  NaN      NaN   NaN  NaN
+3.8073549220576046
+-2.8670689633869735
+Item_values:  [-2.8670689633869735, -2.8670689633869735, -2.8670689633869735, -2.8670689633869735]
+Best_feature outlook
+Tap thuoc tinh sau khi loai la:  ['temp', 'humidity', 'wind']
+Xet gia tri:  Overcast 
+
+Subdata la: 
+     day   outlook  temp humidity    wind play
+2    D3  Overcast   Hot     High    Weak  Yes
+6    D7  Overcast  Cool   Normal  Strong  Yes
+11  D12  Overcast  Mild     High  Strong  Yes
+12  D13  Overcast   Hot   Normal    Weak  Yes
+parent_node_class la:  Yes 
+
+** According to play/Yes with unique_instance_num = 1 **
+    day   outlook  temp humidity    wind play
+2    D3  Overcast   Hot     High    Weak  Yes
+6    D7  Overcast  Cool   Normal  Strong  Yes
+11  D12  Overcast  Mild     High  Strong  Yes
+12  D13  Overcast   Hot   Normal    Weak  Yes
+Du lieu thuan nhat tra ve nut la
+Xet gia tri:  Rain 
+
+Subdata la: 
+     day outlook  temp humidity    wind play
+3    D4    Rain  Mild     High    Weak  Yes
+4    D5    Rain  Cool   Normal    Weak  Yes
+5    D6    Rain  Cool   Normal  Strong   No
+9   D10    Rain  Mild   Normal    Weak  Yes
+13  D14    Rain  Mild     High  Strong   No
+parent_node_class la:  Yes 
+
+** According to play/Yes with unique_instance_num = 2 **
+    day outlook  temp humidity    wind play
+3    D4    Rain  Mild     High    Weak  Yes
+4    D5    Rain  Cool   Normal    Weak  Yes
+5    D6    Rain  Cool   Normal  Strong   No
+9   D10    Rain  Mild   Normal    Weak  Yes
+13  D14    Rain  Mild     High  Strong   No
+3     Yes
+4     Yes
+5      No
+9     Yes
+13     No
+Name: play, dtype: object
+Unique: ['No' 'Yes']
+Indices: [2 3]
+Argmax_index:  1
+Parent node class:  Yes
+Tap features:  ['temp', 'humidity', 'wind']
+['Cool' 'High' 'Mild' 'Normal' 'Strong' 'Weak']
+[2 2 3 3 2 3]
+15
+Cool
+['temp', 'humidity', 'wind']
+0.13333333333333333
+    day outlook  temp humidity wind play
+3   NaN     NaN   NaN      NaN  NaN  NaN
+4   NaN     NaN  Cool      NaN  NaN  NaN
+5   NaN     NaN  Cool      NaN  NaN  NaN
+9   NaN     NaN   NaN      NaN  NaN  NaN
+13  NaN     NaN   NaN      NaN  NaN  NaN
+0.3095904126516483
+High
+['temp', 'humidity', 'wind']
+0.13333333333333333
+    day outlook temp humidity wind play
+3   NaN     NaN  NaN     High  NaN  NaN
+4   NaN     NaN  NaN      NaN  NaN  NaN
+5   NaN     NaN  NaN      NaN  NaN  NaN
+9   NaN     NaN  NaN      NaN  NaN  NaN
+13  NaN     NaN  NaN     High  NaN  NaN
+0.6191808253032965
+Mild
+['temp', 'humidity', 'wind']
+0.2
+    day outlook  temp humidity wind play
+3   NaN     NaN  Mild      NaN  NaN  NaN
+4   NaN     NaN   NaN      NaN  NaN  NaN
+5   NaN     NaN   NaN      NaN  NaN  NaN
+9   NaN     NaN  Mild      NaN  NaN  NaN
+13  NaN     NaN  Mild      NaN  NaN  NaN
+1.0835664442807689
+Normal
+['temp', 'humidity', 'wind']
+0.2
+    day outlook temp humidity wind play
+3   NaN     NaN  NaN      NaN  NaN  NaN
+4   NaN     NaN  NaN   Normal  NaN  NaN
+5   NaN     NaN  NaN   Normal  NaN  NaN
+9   NaN     NaN  NaN   Normal  NaN  NaN
+13  NaN     NaN  NaN      NaN  NaN  NaN
+1.5479520632582413
+Strong
+['temp', 'humidity', 'wind']
+0.13333333333333333
+    day outlook temp humidity    wind play
+3   NaN     NaN  NaN      NaN     NaN  NaN
+4   NaN     NaN  NaN      NaN     NaN  NaN
+5   NaN     NaN  NaN      NaN  Strong  NaN
+9   NaN     NaN  NaN      NaN     NaN  NaN
+13  NaN     NaN  NaN      NaN  Strong  NaN
+1.8575424759098895
+Weak
+['temp', 'humidity', 'wind']
+0.2
+    day outlook temp humidity  wind play
+3   NaN     NaN  NaN      NaN  Weak  NaN
+4   NaN     NaN  NaN      NaN  Weak  NaN
+5   NaN     NaN  NaN      NaN   NaN  NaN
+9   NaN     NaN  NaN      NaN  Weak  NaN
+13  NaN     NaN  NaN      NaN   NaN  NaN
+2.3219280948873617
+-1.3509775004326932
+['Cool' 'High' 'Mild' 'Normal' 'Strong' 'Weak']
+[2 2 3 3 2 3]
+15
+Cool
+['temp', 'humidity', 'wind']
+0.13333333333333333
+    day outlook  temp humidity wind play
+3   NaN     NaN   NaN      NaN  NaN  NaN
+4   NaN     NaN  Cool      NaN  NaN  NaN
+5   NaN     NaN  Cool      NaN  NaN  NaN
+9   NaN     NaN   NaN      NaN  NaN  NaN
+13  NaN     NaN   NaN      NaN  NaN  NaN
+0.3095904126516483
+High
+['temp', 'humidity', 'wind']
+0.13333333333333333
+    day outlook temp humidity wind play
+3   NaN     NaN  NaN     High  NaN  NaN
+4   NaN     NaN  NaN      NaN  NaN  NaN
+5   NaN     NaN  NaN      NaN  NaN  NaN
+9   NaN     NaN  NaN      NaN  NaN  NaN
+13  NaN     NaN  NaN     High  NaN  NaN
+0.6191808253032965
+Mild
+['temp', 'humidity', 'wind']
+0.2
+    day outlook  temp humidity wind play
+3   NaN     NaN  Mild      NaN  NaN  NaN
+4   NaN     NaN   NaN      NaN  NaN  NaN
+5   NaN     NaN   NaN      NaN  NaN  NaN
+9   NaN     NaN  Mild      NaN  NaN  NaN
+13  NaN     NaN  Mild      NaN  NaN  NaN
+1.0835664442807689
+Normal
+['temp', 'humidity', 'wind']
+0.2
+    day outlook temp humidity wind play
+3   NaN     NaN  NaN      NaN  NaN  NaN
+4   NaN     NaN  NaN   Normal  NaN  NaN
+5   NaN     NaN  NaN   Normal  NaN  NaN
+9   NaN     NaN  NaN   Normal  NaN  NaN
+13  NaN     NaN  NaN      NaN  NaN  NaN
+1.5479520632582413
+Strong
+['temp', 'humidity', 'wind']
+0.13333333333333333
+    day outlook temp humidity    wind play
+3   NaN     NaN  NaN      NaN     NaN  NaN
+4   NaN     NaN  NaN      NaN     NaN  NaN
+5   NaN     NaN  NaN      NaN  Strong  NaN
+9   NaN     NaN  NaN      NaN     NaN  NaN
+13  NaN     NaN  NaN      NaN  Strong  NaN
+1.8575424759098895
+Weak
+['temp', 'humidity', 'wind']
+0.2
+    day outlook temp humidity  wind play
+3   NaN     NaN  NaN      NaN  Weak  NaN
+4   NaN     NaN  NaN      NaN  Weak  NaN
+5   NaN     NaN  NaN      NaN   NaN  NaN
+9   NaN     NaN  NaN      NaN  Weak  NaN
+13  NaN     NaN  NaN      NaN   NaN  NaN
+2.3219280948873617
+-1.3509775004326932
+['Cool' 'High' 'Mild' 'Normal' 'Strong' 'Weak']
+[2 2 3 3 2 3]
+15
+Cool
+['temp', 'humidity', 'wind']
+0.13333333333333333
+    day outlook  temp humidity wind play
+3   NaN     NaN   NaN      NaN  NaN  NaN
+4   NaN     NaN  Cool      NaN  NaN  NaN
+5   NaN     NaN  Cool      NaN  NaN  NaN
+9   NaN     NaN   NaN      NaN  NaN  NaN
+13  NaN     NaN   NaN      NaN  NaN  NaN
+0.3095904126516483
+High
+['temp', 'humidity', 'wind']
+0.13333333333333333
+    day outlook temp humidity wind play
+3   NaN     NaN  NaN     High  NaN  NaN
+4   NaN     NaN  NaN      NaN  NaN  NaN
+5   NaN     NaN  NaN      NaN  NaN  NaN
+9   NaN     NaN  NaN      NaN  NaN  NaN
+13  NaN     NaN  NaN     High  NaN  NaN
+0.6191808253032965
+Mild
+['temp', 'humidity', 'wind']
+0.2
+    day outlook  temp humidity wind play
+3   NaN     NaN  Mild      NaN  NaN  NaN
+4   NaN     NaN   NaN      NaN  NaN  NaN
+5   NaN     NaN   NaN      NaN  NaN  NaN
+9   NaN     NaN  Mild      NaN  NaN  NaN
+13  NaN     NaN  Mild      NaN  NaN  NaN
+1.0835664442807689
+Normal
+['temp', 'humidity', 'wind']
+0.2
+    day outlook temp humidity wind play
+3   NaN     NaN  NaN      NaN  NaN  NaN
+4   NaN     NaN  NaN   Normal  NaN  NaN
+5   NaN     NaN  NaN   Normal  NaN  NaN
+9   NaN     NaN  NaN   Normal  NaN  NaN
+13  NaN     NaN  NaN      NaN  NaN  NaN
+1.5479520632582413
+Strong
+['temp', 'humidity', 'wind']
+0.13333333333333333
+    day outlook temp humidity    wind play
+3   NaN     NaN  NaN      NaN     NaN  NaN
+4   NaN     NaN  NaN      NaN     NaN  NaN
+5   NaN     NaN  NaN      NaN  Strong  NaN
+9   NaN     NaN  NaN      NaN     NaN  NaN
+13  NaN     NaN  NaN      NaN  Strong  NaN
+1.8575424759098895
+Weak
+['temp', 'humidity', 'wind']
+0.2
+    day outlook temp humidity  wind play
+3   NaN     NaN  NaN      NaN  Weak  NaN
+4   NaN     NaN  NaN      NaN  Weak  NaN
+5   NaN     NaN  NaN      NaN   NaN  NaN
+9   NaN     NaN  NaN      NaN  Weak  NaN
+13  NaN     NaN  NaN      NaN   NaN  NaN
+2.3219280948873617
+-1.3509775004326932
+Item_values:  [-1.3509775004326932, -1.3509775004326932, -1.3509775004326932]
+Best_feature temp
+Tap thuoc tinh sau khi loai la:  ['humidity', 'wind']
+Xet gia tri:  Cool 
+
+Subdata la: 
+   day outlook  temp humidity    wind play
+4  D5    Rain  Cool   Normal    Weak  Yes
+5  D6    Rain  Cool   Normal  Strong   No
+parent_node_class la:  Yes 
+
+** According to play/Yes with unique_instance_num = 2 **
+  day outlook  temp humidity    wind play
+4  D5    Rain  Cool   Normal    Weak  Yes
+5  D6    Rain  Cool   Normal  Strong   No
+4    Yes
+5     No
+Name: play, dtype: object
+Unique: ['No' 'Yes']
+Indices: [1 1]
+Argmax_index:  0
+Parent node class:  No
+Tap features:  ['humidity', 'wind']
+['Normal' 'Strong' 'Weak']
+[2 1 1]
+4
+Normal
+['humidity', 'wind']
+0.5
+   day outlook temp humidity wind play
+4  NaN     NaN  NaN   Normal  NaN  NaN
+5  NaN     NaN  NaN   Normal  NaN  NaN
+0.5
+Strong
+['humidity', 'wind']
+0.25
+   day outlook temp humidity    wind play
+4  NaN     NaN  NaN      NaN     NaN  NaN
+5  NaN     NaN  NaN      NaN  Strong  NaN
+0.75
+Weak
+['humidity', 'wind']
+0.25
+   day outlook temp humidity  wind play
+4  NaN     NaN  NaN      NaN  Weak  NaN
+5  NaN     NaN  NaN      NaN   NaN  NaN
+1.0
+0.0
+['Normal' 'Strong' 'Weak']
+[2 1 1]
+4
+Normal
+['humidity', 'wind']
+0.5
+   day outlook temp humidity wind play
+4  NaN     NaN  NaN   Normal  NaN  NaN
+5  NaN     NaN  NaN   Normal  NaN  NaN
+0.5
+Strong
+['humidity', 'wind']
+0.25
+   day outlook temp humidity    wind play
+4  NaN     NaN  NaN      NaN     NaN  NaN
+5  NaN     NaN  NaN      NaN  Strong  NaN
+0.75
+Weak
+['humidity', 'wind']
+0.25
+   day outlook temp humidity  wind play
+4  NaN     NaN  NaN      NaN  Weak  NaN
+5  NaN     NaN  NaN      NaN   NaN  NaN
+1.0
+0.0
+Item_values:  [0.0, 0.0]
+Best_feature humidity
+Tap thuoc tinh sau khi loai la:  ['wind']
+Xet gia tri:  Normal 
+
+Subdata la: 
+   day outlook  temp humidity    wind play
+4  D5    Rain  Cool   Normal    Weak  Yes
+5  D6    Rain  Cool   Normal  Strong   No
+parent_node_class la:  No 
+
+** According to play/No with unique_instance_num = 2 **
+  day outlook  temp humidity    wind play
+4  D5    Rain  Cool   Normal    Weak  Yes
+5  D6    Rain  Cool   Normal  Strong   No
+4    Yes
+5     No
+Name: play, dtype: object
+Unique: ['No' 'Yes']
+Indices: [1 1]
+Argmax_index:  0
+Parent node class:  No
+Tap features:  ['wind']
+['Strong' 'Weak']
+[1 1]
+2
+Strong
+['wind']
+0.5
+   day outlook temp humidity    wind play
+4  NaN     NaN  NaN      NaN     NaN  NaN
+5  NaN     NaN  NaN      NaN  Strong  NaN
+0.5
+Weak
+['wind']
+0.5
+   day outlook temp humidity  wind play
+4  NaN     NaN  NaN      NaN  Weak  NaN
+5  NaN     NaN  NaN      NaN   NaN  NaN
+1.0
+0.0
+Item_values:  [0.0]
+Best_feature wind
+Tap thuoc tinh sau khi loai la:  []
+Xet gia tri:  Strong 
+
+Subdata la: 
+   day outlook  temp humidity    wind play
+5  D6    Rain  Cool   Normal  Strong   No
+parent_node_class la:  No 
+
+** According to play/No with unique_instance_num = 1 **
+  day outlook  temp humidity    wind play
+5  D6    Rain  Cool   Normal  Strong   No
+Du lieu thuan nhat tra ve nut la
+Xet gia tri:  Weak 
+
+Subdata la: 
+   day outlook  temp humidity  wind play
+4  D5    Rain  Cool   Normal  Weak  Yes
+parent_node_class la:  No 
+
+** According to play/No with unique_instance_num = 1 **
+  day outlook  temp humidity  wind play
+4  D5    Rain  Cool   Normal  Weak  Yes
+Du lieu thuan nhat tra ve nut la
+Xet gia tri:  Mild 
+
+Subdata la: 
+     day outlook  temp humidity    wind play
+3    D4    Rain  Mild     High    Weak  Yes
+9   D10    Rain  Mild   Normal    Weak  Yes
+13  D14    Rain  Mild     High  Strong   No
+parent_node_class la:  Yes 
+
+** According to play/Yes with unique_instance_num = 2 **
+    day outlook  temp humidity    wind play
+3    D4    Rain  Mild     High    Weak  Yes
+9   D10    Rain  Mild   Normal    Weak  Yes
+13  D14    Rain  Mild     High  Strong   No
+3     Yes
+9     Yes
+13     No
+Name: play, dtype: object
+Unique: ['No' 'Yes']
+Indices: [1 2]
+Argmax_index:  1
+Parent node class:  Yes
+Tap features:  ['humidity', 'wind']
+['High' 'Normal' 'Strong' 'Weak']
+[2 1 1 2]
+6
+High
+['humidity', 'wind']
+0.3333333333333333
+    day outlook temp humidity wind play
+3   NaN     NaN  NaN     High  NaN  NaN
+9   NaN     NaN  NaN      NaN  NaN  NaN
+13  NaN     NaN  NaN     High  NaN  NaN
+0.5283208335737186
+Normal
+['humidity', 'wind']
+0.16666666666666666
+    day outlook temp humidity wind play
+3   NaN     NaN  NaN      NaN  NaN  NaN
+9   NaN     NaN  NaN   Normal  NaN  NaN
+13  NaN     NaN  NaN      NaN  NaN  NaN
+0.7924812503605779
+Strong
+['humidity', 'wind']
+0.16666666666666666
+    day outlook temp humidity    wind play
+3   NaN     NaN  NaN      NaN     NaN  NaN
+9   NaN     NaN  NaN      NaN     NaN  NaN
+13  NaN     NaN  NaN      NaN  Strong  NaN
+1.0566416671474372
+Weak
+['humidity', 'wind']
+0.3333333333333333
+    day outlook temp humidity  wind play
+3   NaN     NaN  NaN      NaN  Weak  NaN
+9   NaN     NaN  NaN      NaN  Weak  NaN
+13  NaN     NaN  NaN      NaN   NaN  NaN
+1.5849625007211559
+-0.6666666666666663
+['High' 'Normal' 'Strong' 'Weak']
+[2 1 1 2]
+6
+High
+['humidity', 'wind']
+0.3333333333333333
+    day outlook temp humidity wind play
+3   NaN     NaN  NaN     High  NaN  NaN
+9   NaN     NaN  NaN      NaN  NaN  NaN
+13  NaN     NaN  NaN     High  NaN  NaN
+0.5283208335737186
+Normal
+['humidity', 'wind']
+0.16666666666666666
+    day outlook temp humidity wind play
+3   NaN     NaN  NaN      NaN  NaN  NaN
+9   NaN     NaN  NaN   Normal  NaN  NaN
+13  NaN     NaN  NaN      NaN  NaN  NaN
+0.7924812503605779
+Strong
+['humidity', 'wind']
+0.16666666666666666
+    day outlook temp humidity    wind play
+3   NaN     NaN  NaN      NaN     NaN  NaN
+9   NaN     NaN  NaN      NaN     NaN  NaN
+13  NaN     NaN  NaN      NaN  Strong  NaN
+1.0566416671474372
+Weak
+['humidity', 'wind']
+0.3333333333333333
+    day outlook temp humidity  wind play
+3   NaN     NaN  NaN      NaN  Weak  NaN
+9   NaN     NaN  NaN      NaN  Weak  NaN
+13  NaN     NaN  NaN      NaN   NaN  NaN
+1.5849625007211559
+-0.6666666666666663
+Item_values:  [-0.6666666666666663, -0.6666666666666663]
+Best_feature humidity
+Tap thuoc tinh sau khi loai la:  ['wind']
+Xet gia tri:  High 
+
+Subdata la: 
+     day outlook  temp humidity    wind play
+3    D4    Rain  Mild     High    Weak  Yes
+13  D14    Rain  Mild     High  Strong   No
+parent_node_class la:  Yes 
+
+** According to play/Yes with unique_instance_num = 2 **
+    day outlook  temp humidity    wind play
+3    D4    Rain  Mild     High    Weak  Yes
+13  D14    Rain  Mild     High  Strong   No
+3     Yes
+13     No
+Name: play, dtype: object
+Unique: ['No' 'Yes']
+Indices: [1 1]
+Argmax_index:  0
+Parent node class:  No
+Tap features:  ['wind']
+['Strong' 'Weak']
+[1 1]
+2
+Strong
+['wind']
+0.5
+    day outlook temp humidity    wind play
+3   NaN     NaN  NaN      NaN     NaN  NaN
+13  NaN     NaN  NaN      NaN  Strong  NaN
+0.5
+Weak
+['wind']
+0.5
+    day outlook temp humidity  wind play
+3   NaN     NaN  NaN      NaN  Weak  NaN
+13  NaN     NaN  NaN      NaN   NaN  NaN
+1.0
+0.0
+Item_values:  [0.0]
+Best_feature wind
+Tap thuoc tinh sau khi loai la:  []
+Xet gia tri:  Strong 
+
+Subdata la: 
+     day outlook  temp humidity    wind play
+13  D14    Rain  Mild     High  Strong   No
+parent_node_class la:  No 
+
+** According to play/No with unique_instance_num = 1 **
+    day outlook  temp humidity    wind play
+13  D14    Rain  Mild     High  Strong   No
+Du lieu thuan nhat tra ve nut la
+Xet gia tri:  Weak 
+
+Subdata la: 
+   day outlook  temp humidity  wind play
+3  D4    Rain  Mild     High  Weak  Yes
+parent_node_class la:  No 
+
+** According to play/No with unique_instance_num = 1 **
+  day outlook  temp humidity  wind play
+3  D4    Rain  Mild     High  Weak  Yes
+Du lieu thuan nhat tra ve nut la
+Xet gia tri:  Normal 
+
+Subdata la: 
+    day outlook  temp humidity  wind play
+9  D10    Rain  Mild   Normal  Weak  Yes
+parent_node_class la:  Yes 
+
+** According to play/Yes with unique_instance_num = 1 **
+   day outlook  temp humidity  wind play
+9  D10    Rain  Mild   Normal  Weak  Yes
+Du lieu thuan nhat tra ve nut la
+Xet gia tri:  Sunny 
+
+Subdata la: 
+     day outlook  temp humidity    wind play
+0    D1   Sunny   Hot     High    Weak   No
+1    D2   Sunny   Hot     High  Strong   No
+7    D8   Sunny  Mild     High    Weak   No
+8    D9   Sunny  Cool   Normal    Weak  Yes
+10  D11   Sunny  Mild   Normal  Strong  Yes
+parent_node_class la:  Yes 
+
+** According to play/Yes with unique_instance_num = 2 **
+    day outlook  temp humidity    wind play
+0    D1   Sunny   Hot     High    Weak   No
+1    D2   Sunny   Hot     High  Strong   No
+7    D8   Sunny  Mild     High    Weak   No
+8    D9   Sunny  Cool   Normal    Weak  Yes
+10  D11   Sunny  Mild   Normal  Strong  Yes
+0      No
+1      No
+7      No
+8     Yes
+10    Yes
+Name: play, dtype: object
+Unique: ['No' 'Yes']
+Indices: [3 2]
+Argmax_index:  0
+Parent node class:  No
+Tap features:  ['temp', 'humidity', 'wind']
+['Cool' 'High' 'Hot' 'Mild' 'Normal' 'Strong' 'Weak']
+[1 3 2 2 2 2 3]
+15
+Cool
+['temp', 'humidity', 'wind']
+0.06666666666666667
+    day outlook  temp humidity wind play
+0   NaN     NaN   NaN      NaN  NaN  NaN
+1   NaN     NaN   NaN      NaN  NaN  NaN
+7   NaN     NaN   NaN      NaN  NaN  NaN
+8   NaN     NaN  Cool      NaN  NaN  NaN
+10  NaN     NaN   NaN      NaN  NaN  NaN
+0.15479520632582414
+High
+['temp', 'humidity', 'wind']
+0.2
+    day outlook temp humidity wind play
+0   NaN     NaN  NaN     High  NaN  NaN
+1   NaN     NaN  NaN     High  NaN  NaN
+7   NaN     NaN  NaN     High  NaN  NaN
+8   NaN     NaN  NaN      NaN  NaN  NaN
+10  NaN     NaN  NaN      NaN  NaN  NaN
+0.6191808253032965
+Hot
+['temp', 'humidity', 'wind']
+0.13333333333333333
+    day outlook temp humidity wind play
+0   NaN     NaN  Hot      NaN  NaN  NaN
+1   NaN     NaN  Hot      NaN  NaN  NaN
+7   NaN     NaN  NaN      NaN  NaN  NaN
+8   NaN     NaN  NaN      NaN  NaN  NaN
+10  NaN     NaN  NaN      NaN  NaN  NaN
+0.9287712379549449
+Mild
+['temp', 'humidity', 'wind']
+0.13333333333333333
+    day outlook  temp humidity wind play
+0   NaN     NaN   NaN      NaN  NaN  NaN
+1   NaN     NaN   NaN      NaN  NaN  NaN
+7   NaN     NaN  Mild      NaN  NaN  NaN
+8   NaN     NaN   NaN      NaN  NaN  NaN
+10  NaN     NaN  Mild      NaN  NaN  NaN
+1.238361650606593
+Normal
+['temp', 'humidity', 'wind']
+0.13333333333333333
+    day outlook temp humidity wind play
+0   NaN     NaN  NaN      NaN  NaN  NaN
+1   NaN     NaN  NaN      NaN  NaN  NaN
+7   NaN     NaN  NaN      NaN  NaN  NaN
+8   NaN     NaN  NaN   Normal  NaN  NaN
+10  NaN     NaN  NaN   Normal  NaN  NaN
+1.5479520632582413
+Strong
+['temp', 'humidity', 'wind']
+0.13333333333333333
+    day outlook temp humidity    wind play
+0   NaN     NaN  NaN      NaN     NaN  NaN
+1   NaN     NaN  NaN      NaN  Strong  NaN
+7   NaN     NaN  NaN      NaN     NaN  NaN
+8   NaN     NaN  NaN      NaN     NaN  NaN
+10  NaN     NaN  NaN      NaN  Strong  NaN
+1.8575424759098895
+Weak
+['temp', 'humidity', 'wind']
+0.2
+    day outlook temp humidity  wind play
+0   NaN     NaN  NaN      NaN  Weak  NaN
+1   NaN     NaN  NaN      NaN   NaN  NaN
+7   NaN     NaN  NaN      NaN  Weak  NaN
+8   NaN     NaN  NaN      NaN  Weak  NaN
+10  NaN     NaN  NaN      NaN   NaN  NaN
+2.3219280948873617
+-1.3509775004326932
+['Cool' 'High' 'Hot' 'Mild' 'Normal' 'Strong' 'Weak']
+[1 3 2 2 2 2 3]
+15
+Cool
+['temp', 'humidity', 'wind']
+0.06666666666666667
+    day outlook  temp humidity wind play
+0   NaN     NaN   NaN      NaN  NaN  NaN
+1   NaN     NaN   NaN      NaN  NaN  NaN
+7   NaN     NaN   NaN      NaN  NaN  NaN
+8   NaN     NaN  Cool      NaN  NaN  NaN
+10  NaN     NaN   NaN      NaN  NaN  NaN
+0.15479520632582414
+High
+['temp', 'humidity', 'wind']
+0.2
+    day outlook temp humidity wind play
+0   NaN     NaN  NaN     High  NaN  NaN
+1   NaN     NaN  NaN     High  NaN  NaN
+7   NaN     NaN  NaN     High  NaN  NaN
+8   NaN     NaN  NaN      NaN  NaN  NaN
+10  NaN     NaN  NaN      NaN  NaN  NaN
+0.6191808253032965
+Hot
+['temp', 'humidity', 'wind']
+0.13333333333333333
+    day outlook temp humidity wind play
+0   NaN     NaN  Hot      NaN  NaN  NaN
+1   NaN     NaN  Hot      NaN  NaN  NaN
+7   NaN     NaN  NaN      NaN  NaN  NaN
+8   NaN     NaN  NaN      NaN  NaN  NaN
+10  NaN     NaN  NaN      NaN  NaN  NaN
+0.9287712379549449
+Mild
+['temp', 'humidity', 'wind']
+0.13333333333333333
+    day outlook  temp humidity wind play
+0   NaN     NaN   NaN      NaN  NaN  NaN
+1   NaN     NaN   NaN      NaN  NaN  NaN
+7   NaN     NaN  Mild      NaN  NaN  NaN
+8   NaN     NaN   NaN      NaN  NaN  NaN
+10  NaN     NaN  Mild      NaN  NaN  NaN
+1.238361650606593
+Normal
+['temp', 'humidity', 'wind']
+0.13333333333333333
+    day outlook temp humidity wind play
+0   NaN     NaN  NaN      NaN  NaN  NaN
+1   NaN     NaN  NaN      NaN  NaN  NaN
+7   NaN     NaN  NaN      NaN  NaN  NaN
+8   NaN     NaN  NaN   Normal  NaN  NaN
+10  NaN     NaN  NaN   Normal  NaN  NaN
+1.5479520632582413
+Strong
+['temp', 'humidity', 'wind']
+0.13333333333333333
+    day outlook temp humidity    wind play
+0   NaN     NaN  NaN      NaN     NaN  NaN
+1   NaN     NaN  NaN      NaN  Strong  NaN
+7   NaN     NaN  NaN      NaN     NaN  NaN
+8   NaN     NaN  NaN      NaN     NaN  NaN
+10  NaN     NaN  NaN      NaN  Strong  NaN
+1.8575424759098895
+Weak
+['temp', 'humidity', 'wind']
+0.2
+    day outlook temp humidity  wind play
+0   NaN     NaN  NaN      NaN  Weak  NaN
+1   NaN     NaN  NaN      NaN   NaN  NaN
+7   NaN     NaN  NaN      NaN  Weak  NaN
+8   NaN     NaN  NaN      NaN  Weak  NaN
+10  NaN     NaN  NaN      NaN   NaN  NaN
+2.3219280948873617
+-1.3509775004326932
+['Cool' 'High' 'Hot' 'Mild' 'Normal' 'Strong' 'Weak']
+[1 3 2 2 2 2 3]
+15
+Cool
+['temp', 'humidity', 'wind']
+0.06666666666666667
+    day outlook  temp humidity wind play
+0   NaN     NaN   NaN      NaN  NaN  NaN
+1   NaN     NaN   NaN      NaN  NaN  NaN
+7   NaN     NaN   NaN      NaN  NaN  NaN
+8   NaN     NaN  Cool      NaN  NaN  NaN
+10  NaN     NaN   NaN      NaN  NaN  NaN
+0.15479520632582414
+High
+['temp', 'humidity', 'wind']
+0.2
+    day outlook temp humidity wind play
+0   NaN     NaN  NaN     High  NaN  NaN
+1   NaN     NaN  NaN     High  NaN  NaN
+7   NaN     NaN  NaN     High  NaN  NaN
+8   NaN     NaN  NaN      NaN  NaN  NaN
+10  NaN     NaN  NaN      NaN  NaN  NaN
+0.6191808253032965
+Hot
+['temp', 'humidity', 'wind']
+0.13333333333333333
+    day outlook temp humidity wind play
+0   NaN     NaN  Hot      NaN  NaN  NaN
+1   NaN     NaN  Hot      NaN  NaN  NaN
+7   NaN     NaN  NaN      NaN  NaN  NaN
+8   NaN     NaN  NaN      NaN  NaN  NaN
+10  NaN     NaN  NaN      NaN  NaN  NaN
+0.9287712379549449
+Mild
+['temp', 'humidity', 'wind']
+0.13333333333333333
+    day outlook  temp humidity wind play
+0   NaN     NaN   NaN      NaN  NaN  NaN
+1   NaN     NaN   NaN      NaN  NaN  NaN
+7   NaN     NaN  Mild      NaN  NaN  NaN
+8   NaN     NaN   NaN      NaN  NaN  NaN
+10  NaN     NaN  Mild      NaN  NaN  NaN
+1.238361650606593
+Normal
+['temp', 'humidity', 'wind']
+0.13333333333333333
+    day outlook temp humidity wind play
+0   NaN     NaN  NaN      NaN  NaN  NaN
+1   NaN     NaN  NaN      NaN  NaN  NaN
+7   NaN     NaN  NaN      NaN  NaN  NaN
+8   NaN     NaN  NaN   Normal  NaN  NaN
+10  NaN     NaN  NaN   Normal  NaN  NaN
+1.5479520632582413
+Strong
+['temp', 'humidity', 'wind']
+0.13333333333333333
+    day outlook temp humidity    wind play
+0   NaN     NaN  NaN      NaN     NaN  NaN
+1   NaN     NaN  NaN      NaN  Strong  NaN
+7   NaN     NaN  NaN      NaN     NaN  NaN
+8   NaN     NaN  NaN      NaN     NaN  NaN
+10  NaN     NaN  NaN      NaN  Strong  NaN
+1.8575424759098895
+Weak
+['temp', 'humidity', 'wind']
+0.2
+    day outlook temp humidity  wind play
+0   NaN     NaN  NaN      NaN  Weak  NaN
+1   NaN     NaN  NaN      NaN   NaN  NaN
+7   NaN     NaN  NaN      NaN  Weak  NaN
+8   NaN     NaN  NaN      NaN  Weak  NaN
+10  NaN     NaN  NaN      NaN   NaN  NaN
+2.3219280948873617
+-1.3509775004326932
+Item_values:  [-1.3509775004326932, -1.3509775004326932, -1.3509775004326932]
+Best_feature temp
+Tap thuoc tinh sau khi loai la:  ['humidity', 'wind']
+Xet gia tri:  Cool 
+
+Subdata la: 
+   day outlook  temp humidity  wind play
+8  D9   Sunny  Cool   Normal  Weak  Yes
+parent_node_class la:  No 
+
+** According to play/No with unique_instance_num = 1 **
+  day outlook  temp humidity  wind play
+8  D9   Sunny  Cool   Normal  Weak  Yes
+Du lieu thuan nhat tra ve nut la
+Xet gia tri:  Hot 
+
+Subdata la: 
+   day outlook temp humidity    wind play
+0  D1   Sunny  Hot     High    Weak   No
+1  D2   Sunny  Hot     High  Strong   No
+parent_node_class la:  No 
+
+** According to play/No with unique_instance_num = 1 **
+  day outlook temp humidity    wind play
+0  D1   Sunny  Hot     High    Weak   No
+1  D2   Sunny  Hot     High  Strong   No
+Du lieu thuan nhat tra ve nut la
+Xet gia tri:  Mild 
+
+Subdata la: 
+     day outlook  temp humidity    wind play
+7    D8   Sunny  Mild     High    Weak   No
+10  D11   Sunny  Mild   Normal  Strong  Yes
+parent_node_class la:  No 
+
+** According to play/No with unique_instance_num = 2 **
+    day outlook  temp humidity    wind play
+7    D8   Sunny  Mild     High    Weak   No
+10  D11   Sunny  Mild   Normal  Strong  Yes
+7      No
+10    Yes
+Name: play, dtype: object
+Unique: ['No' 'Yes']
+Indices: [1 1]
+Argmax_index:  0
+Parent node class:  No
+Tap features:  ['humidity', 'wind']
+['High' 'Normal' 'Strong' 'Weak']
+[1 1 1 1]
+4
+High
+['humidity', 'wind']
+0.25
+    day outlook temp humidity wind play
+7   NaN     NaN  NaN     High  NaN  NaN
+10  NaN     NaN  NaN      NaN  NaN  NaN
+0.25
+Normal
+['humidity', 'wind']
+0.25
+    day outlook temp humidity wind play
+7   NaN     NaN  NaN      NaN  NaN  NaN
+10  NaN     NaN  NaN   Normal  NaN  NaN
+0.5
+Strong
+['humidity', 'wind']
+0.25
+    day outlook temp humidity    wind play
+7   NaN     NaN  NaN      NaN     NaN  NaN
+10  NaN     NaN  NaN      NaN  Strong  NaN
+0.75
+Weak
+['humidity', 'wind']
+0.25
+    day outlook temp humidity  wind play
+7   NaN     NaN  NaN      NaN  Weak  NaN
+10  NaN     NaN  NaN      NaN   NaN  NaN
+1.0
+0.0
+['High' 'Normal' 'Strong' 'Weak']
+[1 1 1 1]
+4
+High
+['humidity', 'wind']
+0.25
+    day outlook temp humidity wind play
+7   NaN     NaN  NaN     High  NaN  NaN
+10  NaN     NaN  NaN      NaN  NaN  NaN
+0.25
+Normal
+['humidity', 'wind']
+0.25
+    day outlook temp humidity wind play
+7   NaN     NaN  NaN      NaN  NaN  NaN
+10  NaN     NaN  NaN   Normal  NaN  NaN
+0.5
+Strong
+['humidity', 'wind']
+0.25
+    day outlook temp humidity    wind play
+7   NaN     NaN  NaN      NaN     NaN  NaN
+10  NaN     NaN  NaN      NaN  Strong  NaN
+0.75
+Weak
+['humidity', 'wind']
+0.25
+    day outlook temp humidity  wind play
+7   NaN     NaN  NaN      NaN  Weak  NaN
+10  NaN     NaN  NaN      NaN   NaN  NaN
+1.0
+0.0
+Item_values:  [0.0, 0.0]
+Best_feature humidity
+Tap thuoc tinh sau khi loai la:  ['wind']
+Xet gia tri:  High 
+
+Subdata la: 
+   day outlook  temp humidity  wind play
+7  D8   Sunny  Mild     High  Weak   No
+parent_node_class la:  No 
+
+** According to play/No with unique_instance_num = 1 **
+  day outlook  temp humidity  wind play
+7  D8   Sunny  Mild     High  Weak   No
+Du lieu thuan nhat tra ve nut la
+Xet gia tri:  Normal 
+
+Subdata la: 
+     day outlook  temp humidity    wind play
+10  D11   Sunny  Mild   Normal  Strong  Yes
+parent_node_class la:  No 
+
+** According to play/No with unique_instance_num = 1 **
+    day outlook  temp humidity    wind play
+10  D11   Sunny  Mild   Normal  Strong  Yes
+Du lieu thuan nhat tra ve nut la
+{'outlook': {'Overcast': 'Yes',
+             'Rain': {'temp': {'Cool': {'humidity': {'Normal': {'wind': {'Strong': 'No',
+                                                                         'Weak': 'Yes'}}}},
+                               'Mild': {'humidity': {'High': {'wind': {'Strong': 'No',
+                                                                       'Weak': 'Yes'}},
+                                                     'Normal': 'Yes'}}}},
+             'Sunny': {'temp': {'Cool': 'Yes',
+                                'Hot': 'No',
+                                'Mild': {'humidity': {'High': 'No',
+                                                      'Normal': 'Yes'}}}}}}
