@@ -3,7 +3,6 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 
-from sklearn import tree
 from sklearn.model_selection import train_test_split
 
 
@@ -187,6 +186,7 @@ class DecisionTreeRegressor:
             y_pred.append(self.tree.predict((x_test.iloc[index, :]).to_dict()))
         return pd.Series(y_pred).values
 
+
 def read_data(data_name, label, opt=2):
     if opt == 0: #create normalized_data
         dt = pd.read_csv('SeoulBikeData.csv')
@@ -252,7 +252,7 @@ def normalize(dt, label):
     return dt, return_list
 
 def mean_squared_error(y_true, y_pred):
-    return np.sum((y_pred - y_true) ** 2) / len(y_true)
+    return np.sum((y_true - y_pred) ** 2) / len(y_true)
     
 def predict_with_DecisionTreeRegressor(x, y, label, visualize=True):
     x_train, x_test, y_train, y_test = train_test_split(x, y, 
