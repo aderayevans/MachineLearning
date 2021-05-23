@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[1229]:
+# In[1772]:
 
 
 import pickle
@@ -14,7 +14,7 @@ from pprint import pprint
 from sklearn.model_selection import train_test_split
 
 
-# In[1230]:
+# In[1773]:
 
 
 class Node:
@@ -123,7 +123,7 @@ class Node:
             return this_node
 
 
-# In[1231]:
+# In[1774]:
 
 
 class DecisionTreeRegressor:
@@ -328,7 +328,7 @@ class DecisionTreeRegressor:
             return pruned_tree
 
 
-# In[1232]:
+# In[1775]:
 
 
 def read_data(data_name, label, opt=2):
@@ -349,7 +349,7 @@ def read_data(data_name, label, opt=2):
     return dt
 
 
-# In[1233]:
+# In[1776]:
 
 
 def write_object_to_file(the_object, file_name):
@@ -357,7 +357,7 @@ def write_object_to_file(the_object, file_name):
         pickle.dump(the_object, output, pickle.HIGHEST_PROTOCOL)
 
 
-# In[1234]:
+# In[1777]:
 
 
 def read_object_from_file(file_name):
@@ -366,14 +366,14 @@ def read_object_from_file(file_name):
     return the_object
 
 
-# In[1235]:
+# In[1778]:
 
 
 def writeCsv(dataframe, filename):
     dataframe.to_csv(filename)
 
 
-# In[1236]:
+# In[1779]:
 
 
 def normalize(dt, label):
@@ -406,14 +406,14 @@ def normalize(dt, label):
     return dt, return_list
 
 
-# In[1237]:
+# In[1780]:
 
 
 def mean_squared_error(y_true, y_pred):
     return np.sum((y_true - y_pred) ** 2) / len(y_true)
 
 
-# In[1238]:
+# In[1781]:
 
 
 def split(df, label):
@@ -427,7 +427,7 @@ def split(df, label):
     return x_train, y_train, x_test, y_test, x_valid, y_valid 
 
 
-# In[1239]:
+# In[1782]:
 
 
 def create_plot(the_column, dr, label, kind_int=0):
@@ -449,7 +449,7 @@ def create_plot(the_column, dr, label, kind_int=0):
     plt.close() 
 
 
-# In[1240]:
+# In[1783]:
 
 
 def show_plot(dr, label, kind='plot'):
@@ -460,12 +460,12 @@ def show_plot(dr, label, kind='plot'):
     dr.data.apply(create_plot, args=(dr, label, kind_int), axis=0)
 
 
-# In[1241]:
+# In[1784]:
 
 
 def show_predictions_lines(dr, df_test, pruned_tree, label):
-    x_test = df_test.sort_values(by='Date')
     y_test = df_test[label]
+    x_test = df_test.sort_values(by='Date')
     
     y_pred = dr.predict(x_test)
     pruned_y_pred = dr.predict(x_test, pruned_tree)
@@ -482,10 +482,9 @@ def show_predictions_lines(dr, df_test, pruned_tree, label):
     #plot_df = pd.DataFrame({'actual':y_test,'pruned_predictions':pruned_y_pred})
     plot_df = pd.DataFrame({'actual':y_test,'predictions':y_pred,'pruned_predictions':pruned_y_pred})
     plot_df.plot(figsize=(150,6), color=['black', '#66c2a5', '#fc8d62'], style=['-', '-', '--'])
-    plt.close() 
 
 
-# In[1242]:
+# In[1785]:
 
 
 def train_with_DecisionTreeRegressor(x_train, y_train, visualize=True):                                           
@@ -498,7 +497,7 @@ def train_with_DecisionTreeRegressor(x_train, y_train, visualize=True):
     write_object_to_file(dr, 'trained_data.pkl')
 
 
-# In[1243]:
+# In[1786]:
 
 
 label='Rented_Bike_Count'
@@ -506,10 +505,92 @@ df = read_data('SeoulBikeData.csv', label, opt=2)
 df.columns = df.columns.str.replace(r'[^a-zA-Z0-9]', '_', regex=True)
 
 
-# In[1244]:
+# In[1787]:
 
 
 x_train, y_train, x_test, y_test, x_valid, y_valid = split(df, label)
+
+
+# In[1788]:
+
+
+from sklearn import linear_model
+
+lm = linear_model.LinearRegression()
+lm.fit(x_train, y_train)
+
+df_test = x_test.copy()
+df_test[label] = y_test
+x_test = df_test.sort_values(by='Date')
+y_test = x_test[label]
+x_test = df_test.drop(columns=[label])
+
+y_pred = lm.predict(x_test)
+    
+##mse
+err = mean_squared_error(y_test, y_pred)
+print('mse =', err)
+##root mse = sqrt(mse)
+rmse_err = np.sqrt(err)
+print('root mse =', round(rmse_err, 3))
+    
+plot_df = pd.DataFrame({'actual':y_test,'predictions':y_pred})
+plot_df.plot(figsize=(150,6), color=['black', '#66c2a5'], style=['-', '--'])
+
+
+# In[1789]:
+
+
+from sklearn.tree import DecisionTreeRegressor as DTR
+dtr = DTR()
+
+dtr.fit(x_train, y_train)
+
+df_test = x_test.copy()
+df_test[label] = y_test
+x_test = df_test.sort_values(by='Date')
+y_test = x_test[label]
+x_test = x_test.drop(columns=[label])
+
+y_pred = dtr.predict(x_test)
+
+err = mean_squared_error(y_test, y_pred)
+print('mse =', err)
+##root mse = sqrt(mse)
+rmse_err = np.sqrt(err)
+print('root mse =', round(rmse_err, 3))
+
+plot_df = pd.DataFrame({'actual':y_test,'predictions':y_pred})
+plot_df.plot(figsize=(150,6), color=['black', '#66c2a5'], style=['-', '--'])
+
+
+# In[1790]:
+
+
+dr = read_object_from_file('trained_data.pkl')
+dr.ml_task = 'regression'
+
+df_test = x_test.copy()
+df_test[label] = y_test
+x_test = df_test.sort_values(by='Date')
+y_test = x_test[label]
+x_test = x_test.drop(columns=[label])
+
+y_pred = dr.predict(x_test)
+
+err = mean_squared_error(y_test, y_pred)
+print('mse =', err)
+##root mse = sqrt(mse)
+rmse_err = np.sqrt(err)
+print('root mse =', round(rmse_err, 3))
+
+plot_df = pd.DataFrame({'actual':y_test,'predictions':y_pred})
+plot_df.plot(figsize=(150,6), color=['black', '#66c2a5'], style=['-', '--'])
+
+
+# In[1791]:
+
+
 #train_with_DecisionTreeRegressor(x_train, y_train, visualize=True)
     
 dr = read_object_from_file('trained_data.pkl')
@@ -519,13 +600,7 @@ tree = dr.get_dict_tree()
 #pprint(dr.get_dict_tree())
 
 
-# In[1245]:
-
-
-dr.data.head()
-
-
-# In[1246]:
+# In[1792]:
 
 
 df_train = x_train.copy()
@@ -535,50 +610,48 @@ df_val[label] = y_valid
 df_test = x_test.copy()
 df_test[label] = y_test
 
-ft = dr.tree.label
-val = dr.tree.value
-
 pruned_tree_by_level, pruned_dict_by_level = dr.get_tree(max_depth=0)
 pprint(pruned_dict_by_level)
 
 
-# In[1247]:
+# In[1793]:
 
 
 pruned_tree = dr.post_pruning(df_train, df_val, label, tree=None)
 
 
-# In[1248]:
+# In[1794]:
 
 
 dr.predict(df_test)
 
 
-# In[1249]:
+# In[1795]:
 
 
 dr.predict(df_test, pruned_tree)
 
 
-# In[1250]:
+# In[1796]:
 
 
 show_predictions_lines(dr, df_test, pruned_tree, label)
 
 
-# In[1251]:
+# In[1797]:
 
 
 #dr.prune(df_val, label, ml_task='regression')
 
 
-# In[1252]:
+# In[1798]:
 
 
+plt.close() 
 show_plot(dr, label, kind='scatter')
 
 
-# In[1253]:
+# In[1799]:
 
 
 df_train = x_train.copy()
